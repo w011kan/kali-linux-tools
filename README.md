@@ -19,7 +19,7 @@
 #### Kullanım
   * Random için: `python3 mac_changer.py -r -i interface`
   * Manual için: `python3 mac_changer.py -m mac -i interface`
-
+  * Kullanım için root yetkisi gerekebilir.
 
 
 Ilk başta random olarak değiştirelim => ` python3 mac_changer.py -r -i interface`
