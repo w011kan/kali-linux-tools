@@ -49,8 +49,42 @@ Başka bir hatalı giriş..
 
 
 
-## 📌 Sonuç  
+##### 📌 Sonuç  
 
 - Bu araç, Kali Linux kullanıcıları için ağ arayüzlerinin MAC adresini değiştirmeyi kolaylaştırmak amacıyla geliştirilmiştir. 
 - Güvenlik testleri, anonimlik veya ağ erişimi ile ilgili ihtiyaçlar için kullanılabilir.  
 
+
+
+
+## network_scan.py 
+- Bu araç, Kali Linux ve diğer Linux sistemlerinde ağ üzerindeki cihazları tespit etmek için geliştirilmiştir.
+- ARP (Address Resolution Protocol) taraması yaparak, ağdaki cihazların MAC ve IP adreslerini listeler.
+- Ağ güvenliği testleri, bağlı cihazları görüntüleme ve ağ analizi yapmak için kullanılabilir.
+
+#### Özellikler
+  
+- Ağ Taraması: Belirtilen IP aralığında ARP isteği göndererek bağlı cihazları tespit eder.
+- MAC - IP Eşlemesi: Ağdaki cihazların MAC adreslerini ve IP adreslerini gösterir.
+- Renkli Çıktı: Sonuçlar renkli olarak ekrana yazdırılır, böylece veriler kolay okunabilir.
+- CLI Desteği: Komut satırından esnek kullanım sağlar.
+- Kolay Kullanım: Hedef IP aralığını belirterek hızlı tarama yapabilirsiniz.
+
+
+#### Kullanım
+  * Tüm ağı taramak için: `python3 network_scan.py -i 192.168.1.1/24`
+  * Özel bir IP bloğu taramak için: `python3 network_scan.py -i 10.0.0.1/16`
+
+  ![image](https://github.com/user-attachments/assets/736ceedb-836b-4ebf-ac94-bc0d4c7ce183)
+
+
+
+##### 📌 Sonuç  
+
+- Bu araç, Kali Linux kullanıcıları için ağdaki cihazları hızlı ve kolay bir şekilde tespit etmek amacıyla geliştirilmiştir.
+- Ağ güvenliği testleri, izinsiz cihazları belirleme ve ağ yönetimi gibi amaçlar için kullanılabilir.
+- Kullanıcı dostu CLI arayüzü sayesinde, ağ analizi yapmak isteyen herkes için pratik ve etkili bir çözümdür.
+
+
+
+ 
