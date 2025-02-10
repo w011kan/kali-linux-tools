@@ -87,4 +87,51 @@ Başka bir hatalı giriş..
 
 
 
+
+
+## man_in_the_middle.py 
+- Bu araç, Kali Linux ve diğer Linux sistemlerinde Man-in-the-Middle (MitM) saldırılarını simüle etmek için geliştirilmiştir
+- ARP Spoofing yöntemiyle ağ trafiğini yönlendirerek, iki cihaz arasındaki iletişimi dinleyebilir veya değiştirebilirsiniz.
+- Kısaca; Bir gateway ve ona bağlı bir cihaz arasında, istekleri yönlendirerek ve mac spoofing yaparak MITM atak gerçekleştirilir. 
+
+#### Özellikler
+  
+- ARP Spoofing: Hedef cihazları yanıltarak trafiği yönlendirir.
+- Renkli Çıktı: Trafik bilgilerini renkli olarak görüntüler.
+- CLI Desteği: Komut satırından esnek kullanım sağlar.
+- Kolay Kullanım: Hedef IP ve ağ geçidini belirterek hızlıca çalıştırabilirsiniz.
+
+
+#### Kullanım
+  * MITM gerçekleştirmek için: `python3 man_in_the_middle.py --target1 10.0.2.5 --target2 10.0.2.1` gibi.
+  * Burada --target1 ve --target2 nin sırası yada değerlerinin sırası önemsizdir.
+  * İşlemi herhangi bir an durdurmak için `x + enter`
+  * Herhangi bir değer gateway ip değeri veya hedef PC ip değeri olarak girilebilir.
+    
+    ![image](https://github.com/user-attachments/assets/4c9b65d5-9027-47aa-904b-60c203fe0374)
+
+  * Burada 10.0.2.1 adresi gateway iken, 10.0.2.5 ağa bağlı Windows bir cihazdır.
+  * İşleme başlamadan önce Windows cihaz için arp tablosuna bakalım.. (arp -a)
+    ![image](https://github.com/user-attachments/assets/41a51d9f-3fd2-40a1-bd7f-134a27105e94)
+  * Görüleceği üzere gateway mac ve kaynak cihazımız olan kali için 10.0.2.7 için mac adresleri görünüdeki gibidir.
+
+  * MITM başlatacak olursak. Gateway için mac adresi kali cihazımızın mac adresi değeri olacaktır.
+    ![image](https://github.com/user-attachments/assets/180fd87d-a2a9-465e-b7ca-7944710a26ce)
+
+  Herhangi bir anda saldırıyı durdurmak için x+enter yapılır.
+    ![image](https://github.com/user-attachments/assets/7d70ed2c-e637-4b86-b746-d4b1b699e2af)
+
+    
+
+
+##### 📌 Sonuç  
+
+- man_in_the_middle.py, ağ güvenliği testleri yapmak ve MitM saldırılarının etkilerini analiz etmek için geliştirilmiştir.
+
+
+
+
+
+
+
  
