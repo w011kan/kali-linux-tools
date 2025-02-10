@@ -33,12 +33,7 @@ def ip_to_mac(ip):
     else:
         return None  # MAC adresi bulunamazsa None döndür
 
-def my_mac(interface_argument):
-    ifconfig = subprocess.check_output(["ifconfig", interface_argument])
-    ifconfig = ifconfig.decode()
-    kali_mac_address = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", ifconfig).group(0).upper()
 
-    return kali_mac_address
 
 # ip_1 ve ip_2 hedef1 ve hedef2 ip olarak tanımlarız.
 # fonksiyon 2 türlü çalıştırılacak.
